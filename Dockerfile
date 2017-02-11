@@ -1,6 +1,7 @@
 FROM java:8-alpine
 RUN apk add --update bash
 RUN apk add libstdc++
+RUN apk add curl 
 ENV ANDROID_SDK_URL https://dl.google.com/android/repository/tools_r25.2.3-linux.zip
 ENV SDK_TMP_FILENAME android-tools.zip
 ENV SDK_EXTRACT_PATH tools
